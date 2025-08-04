@@ -120,56 +120,6 @@ go run main.go
 # Serves on http://localhost:8080
 ```
 
-## 📡 API Endpoints
-
-The backend provides the following example endpoints:
-
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| `GET` | `/api/health` | Health check |
-| `GET` | `/api/users` | Get all users |
-| `POST` | `/api/users` | Create a new user |
-| `GET` | `/api/users/{id}` | Get user by ID |
-
-### Example API Usage
-
-```bash
-# Health check
-curl http://localhost:8080/api/health
-
-# Get all users
-curl http://localhost:8080/api/users
-
-# Create a new user
-curl -X POST http://localhost:8080/api/users \
-  -H "Content-Type: application/json" \
-  -d '{"name":"John Doe","email":"john@example.com"}'
-```
-
-## 🔧 Environment Variables
-
-### Frontend (.env)
-```env
-# API Configuration
-VITE_API_URL=http://localhost:8080
-
-# App Configuration
-VITE_APP_TITLE=Frontend App
-VITE_APP_DESCRIPTION=A modern React frontend
-VITE_NODE_ENV=development
-```
-
-### Backend (.env)
-```env
-# Server Configuration
-PORT=8080
-FRONTEND_URL=http://localhost:5173
-
-# Environment
-ENV=development
-LOG_LEVEL=info
-```
-
 ## 📝 Available Scripts
 
 ### Frontend Scripts
