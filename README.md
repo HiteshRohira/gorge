@@ -89,7 +89,7 @@ gorge/
 ```bash
 # Option 1: Run both services with one command
 cd frontend
-pnpm run dev:all
+pnpm run dev
 
 # Option 2: Run services separately in different terminals
 # Terminal 1 - Backend (with hot reload)
@@ -98,26 +98,7 @@ air
 
 # Terminal 2 - Frontend
 cd frontend
-pnpm dev
-```
-
-### Individual Services
-
-**Frontend only:**
-```bash
-cd frontend
-pnpm dev
-# Opens http://localhost:5173
-```
-
-**Backend only:**
-```bash
-cd backend
-# With hot reload (recommended)
-air
-# OR without hot reload
-go run main.go
-# Serves on http://localhost:8080
+pnpm dev:frontend
 ```
 
 ## 📝 Available Scripts
@@ -132,7 +113,6 @@ go run main.go
 | `pnpm lint:fix` | Fix ESLint issues |
 | `pnpm format` | Format code with Prettier |
 | `pnpm type-check` | Run TypeScript type checking |
-| `pnpm dev:all` | Run both frontend and backend |
 
 ### Backend Scripts
 | Command | Description |
