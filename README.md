@@ -160,30 +160,6 @@ pnpm dlx shadcn@latest add table
 pnpm dlx shadcn@latest add
 ```
 
-## 📁 Project Structure
-
-### Frontend Structure
-```
-frontend/src/
-├── components/       # Reusable UI components
-│   └── ui/          # Shadcn/ui components
-├── hooks/           # Custom React hooks
-├── lib/             # Utility functions and API client
-├── routes/          # TanStack Router routes
-├── types/           # TypeScript type definitions
-└── main.tsx         # Entry point
-```
-
-### Backend Structure
-```
-backend/
-├── main.go          # Entry point with routes and handlers
-├── .air.toml        # Air configuration for hot reload
-├── .env            # Environment variables
-├── go.mod          # Go module definition
-└── go.sum          # Go module checksums
-```
-
 ## 🚀 Production Build
 
 ### Frontend
